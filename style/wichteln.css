@@ -1,0 +1,128 @@
+.hero.is-success.is-fullheight {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+a {
+    position: relative;
+    font-weight: bold;
+}
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+.title {
+    text-shadow: 2px 2px 2px #aaa;
+}
+.subtitle {
+    padding-top: 1.25rem;
+}
+.subsubtitle {
+    font-weight: bold;
+}
+.subsubsubtitle {
+    padding-top: 1.25rem;
+    font-style: italic;
+}
+
+.max-500 {
+    max-width: 500px;
+}
+
+.largebold {
+    font-size: 150%;
+}
+
+input {
+    font-weight: 300;
+}
+.input::-moz-placeholder,
+.select select::-moz-placeholder,
+.textarea::-moz-placeholder {
+    color:rgba(54,54,54,.9);
+}
+.input::-webkit-input-placeholder,
+.select select::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+    color:rgba(54,54,54,.9);
+}
+.input:-moz-placeholder,
+.select select:-moz-placeholder,
+.textarea:-moz-placeholder {
+    color:rgba(54,54,54,.9);
+}
+.input:-ms-input-placeholder,
+.select select:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+    color:rgba(54,54,54,.9);
+}
+.button.is-info {
+    background-color: #273e0e;
+}
+.button.is-info:hover {
+    background-color: #3b1807;
+}
+
+
+.arrow-left {
+    display: block;
+    width: 3em;
+    height: 3em;
+    border: 0.15em solid white;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.arrow-left::after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.85em;
+    margin-left: 0.3em;
+    width: 1em;
+    height: 1em;
+    border-bottom: 0.15em solid white;
+    border-right: 0.15em solid white;
+    transform: rotate(135deg);
+}
+.arrow-left:hover::before {
+    visibility: hidden;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.container.max-500 {
+    max-width: 500px;
+}
+
+
+.foot-content {
+    color: rgba(255,255,255,.8);
+    padding: 10px;
+}
+.foot-content > a {
+    color: inherit;
+}
+
